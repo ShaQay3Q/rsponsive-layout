@@ -9,6 +9,9 @@ export const Navbar = () => {
 	const toggleMenu = () => {
 		setIsMenuOpen(!isMenuOpen);
 	};
+	const closeMenu = () => {
+		setIsMenuOpen(false);
+	};
 	return (
 		<nav className='bg-blue-600 text-white p-4 flex justify-between'>
 			{/* logo */}
@@ -58,9 +61,9 @@ export const Navbar = () => {
 			{/* Mobile Menu Dropdown */}
 			{isMenuOpen && (
 				<ul className='md:hidden absolute left-0 right-0 bg-white shadow-lg px-2 pt-2 pb-3 space-y-1 sm:px-3'>
-					{/* <ul className='px-2 pt-2 pb-3 space-y-1 sm:px-3'> */}
 					<li>
 						<a
+							onClick={closeMenu}
 							href='#'
 							className='text-gray-600 hover:bg-gray-100 block px-3 py-2 rounded-md'
 						>
@@ -69,6 +72,7 @@ export const Navbar = () => {
 					</li>
 					<li>
 						<a
+							onClick={closeMenu}
 							href='/about'
 							className='text-gray-600 hover:bg-gray-100 block px-3 py-2 rounded-md'
 						>
@@ -77,13 +81,13 @@ export const Navbar = () => {
 					</li>
 					<li>
 						<a
+							onClick={closeMenu}
 							href='/contact'
 							className='text-gray-600 hover:bg-gray-100 block px-3 py-2 rounded-md'
 						>
 							Contact
 						</a>
 					</li>
-					{/* </ul> */}
 				</ul>
 			)}
 		</nav>
