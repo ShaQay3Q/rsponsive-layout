@@ -1,3 +1,4 @@
+"use client";
 import { Navbar } from "@/components/Navbar";
 
 export default function Home() {
@@ -5,35 +6,6 @@ export default function Home() {
 		<div className='min-h-screen flex flex-col'>
 			{/* Navbar */}
 			<Navbar />
-			{/* <nav className='bg-blue-600 text-white p-4 flex justify-between'>
-				<h1 className='text-xl font-bold'>My Website</h1>
-				<ul className='hidden md:flex space-x-4'>
-					<li>
-						<a
-							href='#'
-							className='hover:underline'
-						>
-							Home
-						</a>
-					</li>
-					<li>
-						<a
-							href='#'
-							className='hover:underline'
-						>
-							About
-						</a>
-					</li>
-					<li>
-						<a
-							href='#'
-							className='hover:underline'
-						>
-							Contact
-						</a>
-					</li>
-				</ul>
-			</nav> */}
 
 			{/* Hero Section */}
 			<header className='flex-1 bg-gray-100 flex flex-col items-center justify-center p-10 text-center'>
