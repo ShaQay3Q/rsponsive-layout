@@ -7,7 +7,7 @@ export const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	// toggles the state of burger menu
 	const toggleMenu = () => {
-		setIsMenuOpen(isMenuOpen);
+		setIsMenuOpen(!isMenuOpen);
 	};
 	return (
 		<nav className='bg-blue-600 text-white p-4 flex justify-between'>
